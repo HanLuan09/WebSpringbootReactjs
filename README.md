@@ -33,4 +33,14 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use eject. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-# Learn More
+# API
+Open http://localhost:8080
+If our controller has a PUT mapping, we get a 405 error, which means we can only use GET or POST but not PUT.
+Add the following to your application.properties:
+spring.mvc.hiddenmethod.filter.enabled=true
+
+# Spring Data JPA
+Spring Data JPA, part of the larger Spring Data family, makes it easy to easily implement JPA based repositories. This module deals with enhanced support for JPA based data access layers. It makes it easier to build Spring-powered applications that use data access technologies.
+
+Implementing a data access layer of an application has been cumbersome for quite a while. Too much boilerplate code has to be written to execute simple queries as well as perform pagination, and auditing. Spring Data JPA aims to significantly improve the implementation of data access layers by reducing the effort to the amount that’s actually needed. As a developer you write your repository interfaces, including custom finder methods, and Spring will provide the implementation automatically.
+
