@@ -1,2 +1,4 @@
 # WebSpringbootReactjs
-Chức năng xem, thêm, sửa, xóa, tìm kiếm Phone
+
+This project was bootstrapped with Create React App.
+Available Scripts
